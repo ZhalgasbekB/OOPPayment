@@ -116,4 +116,39 @@ public class PersonRepositories implements IPersonRepository {
         }
         return null;
     }
+
+    @Override
+    public Person checkExistPerson(String name , String surname , int age) {
+//        Connection con =  null;
+//
+//        try {
+//             con = db.getConnection();
+//
+//             String sql = "SELECT * FROM person WHERE name=?";
+//
+//            PreparedStatement st = con.prepareStatement(sql);;
+//
+//             st.setString(1, name);
+//
+//
+//             ResultSet rs  = st.executeQuery();
+//             if (rs.next()){
+//
+//                Person person =  new Person(
+//                    rs.getInt("id"),
+//                    rs.getString("name"),
+//                    rs.getString("surname"),
+//                    rs.getString("email"),
+//                    rs.getDouble("income"),
+//                    rs.getInt("age"));
+//
+//                 return person;
+//             }
+//        }catch (SQLException sqlException){
+//            sqlException.printStackTrace();
+//        }catch (ClassNotFoundException e){
+//            e.getMessage();
+//        }
+        return null;
+    }
 }

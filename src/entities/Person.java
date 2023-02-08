@@ -66,12 +66,12 @@ public class Person {
    @Override
    public String toString() {
       return "Person{" +
-              "id=" + id +
-              ", name='" + name + '\'' +
-              ", surname='" + surname + '\'' +
-              ", email='" + email + '\'' +
-              ", income=" + income +
-              ", age=" + age +
+              "id[" + id + "]"+
+              ", name[" + name + "]" + '\'' +
+              ", surname[" + surname+"]" + '\'' +
+              ", email[" + email+ "]" + '\'' +
+              ", income[" + income +"]"+
+              ", age[" + age + "]"+
               '}';
    }
 }

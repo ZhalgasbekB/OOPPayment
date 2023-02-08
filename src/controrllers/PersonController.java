@@ -27,4 +27,8 @@ public class PersonController {
                 List<Person> people = personRepository.getAllUsers();
                 return people.toString();
         }
+        public  String checkExistPerson(String name, String  surname, int age){
+                Person person = personRepository.checkExistPerson(name , surname , age);
+                return  (person == null ? "User was not found!" : person.toString());
+        }
 }

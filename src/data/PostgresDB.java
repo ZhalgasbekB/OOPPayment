@@ -9,7 +9,7 @@ public class PostgresDB implements DB {
     public Connection getConnection() throws SQLException, ClassNotFoundException {
         String url = "jdbc:postgresql://localhost:5432/simpledb";
         String user_name = "postgres";
-        String password = "qwerty11";
+        String password = "0000";
         try {
           Class.forName("org.postgresql.Driver");
 
@@ -26,7 +26,7 @@ public class PostgresDB implements DB {
     public Connection createConnection() throws SQLException, ClassNotFoundException {
         String  url =  "jdbc:postgresql://localhost:5432/simpledb";
         String user  =  "postgres";
-        String password =  "qwerty11";
+        String password =  "0000";
 
         try{
             Class.forName("org.postgresql.Driver");
